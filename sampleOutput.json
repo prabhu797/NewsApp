@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "totalResults": 34,
+  "articles": [
+    {
+      "source": { "id": "associated-press", "name": "Associated Press" },
+      "author": "RIAZAT BUTT",
+      "title": "The Taliban believe their rule is open-ended and don't plan to lift the ban on female education - The Associated Press",
+      "description": "The chief Taliban spokesman says the Taliban view their rule of Afghanistan as open-ended, drawing legitimacy from Islamic law and facing no significant threat. He spoke in an interview with The Associated Press on the eve of Tuesday's second anniversary of t…",
+      "url": "https://apnews.com/article/afghanistan-taliban-women-education-5bc5477a8e4599ac431e4d2e27ebaf85",
+      "urlToImage": "https://dims.apnews.com/dims4/default/f73706d/2147483647/strip/true/crop/6000x3375+0+312/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2b%2F38%2F5a80405f314070db0334ebfb1356%2Fe18db028d63a4899b535537457b3781a",
+      "publishedAt": "2023-08-16T01:05:00Z",
+      "content": "KANDAHAR, Afghanistan (AP) The Taliban view their rule of Afghanistan as open-ended, drawing legitimacy from Islamic law and facing no significant threat, their chief spokesman said in an interview m… [+7551 chars]"
+    },
+    {
+      "source": { "id": null, "name": "MLSsoccer.com" },
+      "author": "mlssoccer",
+      "title": "Jordi Alba! Barça legend scores first Inter Miami goal | MLSSoccer.com - MLSsoccer.com",
+      "description": "Four games in, Jordi Alba has scored his first Inter Miami CF goal.",
+      "url": "https://www.mlssoccer.com/news/jordi-alba-barca-legend-scores-first-inter-miami-goal",
+      "urlToImage": "https://images.mlssoccer.com/image/private/t_q-best/prd-league/xfke6hzq7bqutsnxfxmr.png",
+      "publishedAt": "2023-08-16T00:29:30Z",
+      "content": null
+    }
+  ]
+}
+
+
+[
+    {
+    "uuid": "2b642826-2d6e-4c67-8257-3584d14973ce",
+    "title": "Video of Rajinikanth meeting with U.P. Chief Minister goes viral",
+    "description": "Actor Rajinikanth caused a furore amongst Tamil movie fans after a video of him meeting the Uttar Pradesh Chief Minister Yogi Adithyanath went viral.",
+    "keywords": "Rajinikanth, Rajinikanth UP, Rajinikanth Uttar Pradesh, Rajinikanth Yogi Adityanath",
+    "snippet": "August 20, 2023 10:53 am | Updated 11:02 am IST\n\nActor Rajinikanth caused a furore amongst Tamil movie fans on August 19 after a video of him bowing down to the...",
+    "url": "https://www.thehindu.com/news/national/tamil-nadu/video-of-rajinikanth-meeting-with-up-chief-minister-goes-viral/article67215611.ece",
+    "image_url": "https://th-i.thgim.com/public/incoming/i39d98/article67215642.ece/alternates/LANDSCAPE_1200/PTI08_19_2023_000172A.jpg",
+    "language": "en",
+    "published_at": "2023-08-20T05:23:05.000000Z",
+    "source": "thehindu.com",
+    "categories": [
+    "general"
+    ],
+    "relevance_score": null,
+    "locale": "in"
+    },
+    {
+        "apiKeys": ["Yxs2dYsPigiv30aZGyi4Fn6LzjQUlS96qlchC7E2","pUXjRGO4D6MdpptvWXAkzGFJ6ApKorjfOCiVuHX6","e06WSxV8Mhnh0ziQJEseADLcurQ1ysMmnAmz88Dl","dk4KwIKTZMYK1dV8xcYyYcUufBOQV8pvtZdfjsJm","","","","","",""]
+    }
+]
