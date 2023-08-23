@@ -10,7 +10,7 @@ export default class Navbar extends Component {
         <>
         <div>
 
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className={`navbar fixed-top navbar-expand-lg navbar-dark bg-dark`}>
         <div className="container-fluid">
             <Link className="navbar-brand" to=''>News 24*7</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +29,10 @@ export default class Navbar extends Component {
                 <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
             </ul>
+                <div className="form-check form-switch">
+                <input className="form-check-input" type="checkbox" role='switch' id="flexSwitchCheckChecked"/>
+                <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Dark Mode</label>
+                </div>
             </div>
         </div>
         </nav>
