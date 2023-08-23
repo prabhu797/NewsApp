@@ -1,6 +1,6 @@
 import './App.css';
 
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
 import {
@@ -11,39 +11,43 @@ import {
 import About from './components/About';
 import LoadingBar from 'react-top-loading-bar';
 
-export default class App extends Component {
+const App = () => {
 
-  state = {
-    progress: 0,
+  const [progress, setProgress] = useState(0);
+  const [mode, setMode] = useState(false);
+
+  const toggleMode = () => {
+    if(mode) {
+      setMode(false);
+      document.body.style.backgroundColor = 'white';
+    } else {
+      setMode(true);
+      document.body.style.backgroundColor = '#203754';
+    }
   }
 
-  setProgress = (progress) => {
-    this.setState({progress: progress});
-  }
-
-  render() {
     return (
       <div>
         <Router>
-          <Navbar/>
+          <Navbar mode={mode} toggleMode={toggleMode}/>
           <LoadingBar
               color='#f11946'
               height={3}
-              progress={this.state.progress}
+              progress={progress}
           />
           <Routes>
-            <Route exact path='' element={<News setProgress={this.setProgress} key='general' category='general'/>}/>
-            <Route exact path='business' element={<News setProgress={this.setProgress} key='business' category='business'/>}/>
-            <Route exact path='entertainment' element={<News setProgress={this.setProgress} key='entertainment' category='entertainment'/>}/>
-            <Route exact path='health' element={<News setProgress={this.setProgress} key='health' category='food'/>}/>
-            <Route exact path='science' element={<News setProgress={this.setProgress} key='science' category='science'/>}/>
-            <Route exact path='sports' element={<News setProgress={this.setProgress} key='sports' category='sports'/>}/>
-            <Route exact path='technology' element={<News setProgress={this.setProgress} key='technology' category='tech'/>}/>
+            <Route exact path='' element={<News setProgress={setProgress} mode={mode} key='general' category='general'/>}/>
+            <Route exact path='business' element={<News setProgress={setProgress} mode={mode} key='business' category='business'/>}/>
+            <Route exact path='entertainment' element={<News setProgress={setProgress} mode={mode} key='entertainment' category='entertainment'/>}/>
+            <Route exact path='health' element={<News setProgress={setProgress} mode={mode} key='health' category='food'/>}/>
+            <Route exact path='science' element={<News setProgress={setProgress} mode={mode} key='science' category='science'/>}/>
+            <Route exact path='sports' element={<News setProgress={setProgress} mode={mode} key='sports' category='sports'/>}/>
+            <Route exact path='technology' element={<News setProgress={setProgress} mode={mode} key='technology' category='tech'/>}/>
             <Route exact path='about' element={<About/>}/>
           </Routes>
         </Router>
       </div>
     )
-  }
 }
 
+export default App
