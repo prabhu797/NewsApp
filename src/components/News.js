@@ -34,7 +34,6 @@ const News = (props) => {
         props.setProgress(25);
         let parsedData = await data.json();
         props.setProgress(40);
-        console.log(parsedData);
         if(Object.values(parsedData)[0].code === 'usage_limit_reached') {
             if(index < 3) {
                 setNum(index + 1);
@@ -52,7 +51,6 @@ const News = (props) => {
 
     useEffect(() => {
         fetchNews(page, num);
-        console.log("useEffect Executed");
         let cat = capitalizeFirstLetter(props.category);
         document.title = `News 24*7 - ${cat === 'General'? 'Home' : cat}`;// eslint-disable-next-line
     }, [num])
