@@ -1,16 +1,16 @@
 // import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-export default class Navbar extends Component {
-//   static propTypes = {second: third}
+const Navbar = (props) => {
 
-  render() {
+    const {mode, toggleMode} = props;
     return (
         <>
         <div>
 
-        <nav className={`navbar fixed-top navbar-expand-lg navbar-dark bg-dark`}>
+        <nav className={`navbar fixed-top navbar-expand-lg navbar-${mode? 'dark' : 'light'} bg-${mode? 'dark' : 'light'}`}>
         <div className="container-fluid">
             <Link className="navbar-brand" to=''>News 24*7</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,8 +30,8 @@ export default class Navbar extends Component {
                 <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
             </ul>
                 <div className="form-check form-switch">
-                <input className="form-check-input" type="checkbox" role='switch' id="flexSwitchCheckChecked"/>
-                <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Dark Mode</label>
+                <input className="form-check-input" onClick={toggleMode} type="checkbox" role='switch' id="flexSwitchCheckChecked"/>
+                <label className="form-check-label" htmlFor="flexSwitchCheckChecked" style={{color: mode? 'white' : 'black'}}>Enable {mode? 'Light':'Dark'} Mode</label>
                 </div>
             </div>
         </div>
@@ -40,5 +40,14 @@ export default class Navbar extends Component {
       </div>
       </>
     )
-  }
 }
+
+Navbar.defaultProps = {
+    mode: false,
+}
+
+Navbar.protoTypes = {
+    mode: PropTypes.bool.isRequired,
+}
+
+export default Navbar

@@ -1,14 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import noImageAvailable from './noImageAvailable.jpg'
 
-export class NewsItem extends Component {
-    // constructor() {
-    //     super();
-    //     console.log("I am constructor from NewsItem Component."); // We can set state using constructor also. It is same as Java member initialization
-    // }
+const NewsItem = (props) => {
 
-  render() {
-    let {title, description, imageUrl, newsUrl, author, date, source} = this.props;
+    let {title, description, imageUrl, newsUrl, author, date, source} = props;
     return (
       <div className='container my-3'>
         <div className="card shadow-lg p-3 mb-3 bg-body rounded">
@@ -22,7 +17,6 @@ export class NewsItem extends Component {
             </div>
       </div>
     )
-  }
 }
 
 export default NewsItem

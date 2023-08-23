@@ -1,50 +1,79 @@
+// Error Message
+
 {
-  "status": "ok",
-  "totalResults": 34,
-  "articles": [
+  "error": {
+  "code": "invalid_api_token",
+  "message": "An invalid API token was supplied."
+  }
+}
+
+{
+  "error": {
+  "code": "usage_limit_reached",
+  "message": "The usage limit for this account has been reached."
+  }
+}
+
+// Success Message
+
+{
+  "meta": {
+    "found": 1364162,
+    "returned": 3,
+    "limit": 3,
+    "page": 1
+  },
+  "data": [
     {
-      "source": { "id": "associated-press", "name": "Associated Press" },
-      "author": "RIAZAT BUTT",
-      "title": "The Taliban believe their rule is open-ended and don't plan to lift the ban on female education - The Associated Press",
-      "description": "The chief Taliban spokesman says the Taliban view their rule of Afghanistan as open-ended, drawing legitimacy from Islamic law and facing no significant threat. He spoke in an interview with The Associated Press on the eve of Tuesday's second anniversary of t…",
-      "url": "https://apnews.com/article/afghanistan-taliban-women-education-5bc5477a8e4599ac431e4d2e27ebaf85",
-      "urlToImage": "https://dims.apnews.com/dims4/default/f73706d/2147483647/strip/true/crop/6000x3375+0+312/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2b%2F38%2F5a80405f314070db0334ebfb1356%2Fe18db028d63a4899b535537457b3781a",
-      "publishedAt": "2023-08-16T01:05:00Z",
-      "content": "KANDAHAR, Afghanistan (AP) The Taliban view their rule of Afghanistan as open-ended, drawing legitimacy from Islamic law and facing no significant threat, their chief spokesman said in an interview m… [+7551 chars]"
+      "uuid": "75815e3c-5530-4810-828c-5721f4e981fc",
+      "title": "BRICS Summit: PM Modi Sees Indian Flag Lying On Ground, Here's What He Did - Watch",
+      "description": "Prime Minister Narendra Modi on Wednesday noticed the Indian flag lying on the floor during the group photo at the BRICS Summit in South Africas Johannesburg. H...",
+      "keywords": "BRICS Summit, BRICS, Narendra Modi, Indian Flag, Cyril Ramaphosa, BRICS Summit, BRICS, Narendra Modi, Indian flag, Cyril Ramaphosa",
+      "snippet": "New Delhi: Prime Minister Narendra Modi on Wednesday noticed the Indian flag lying on the floor during the group photo at the BRICS Summit in South Africa's Joh...",
+      "url": "https://zeenews.india.com/world/brics-summit-pm-modi-sees-indian-flag-lying-on-ground-heres-what-he-did-watch-2652658.html",
+      "image_url": "https://english.cdn.zeenews.com/sites/default/files/2023/08/23/1268267-20230823079l.jpg",
+      "language": "en",
+      "published_at": "2023-08-23T10:11:00.000000Z",
+      "source": "zeenews.india.com",
+      "categories": [
+          "general"
+      ],
+      "relevance_score": null,
+      "locale": "in"
     },
     {
-      "source": { "id": null, "name": "MLSsoccer.com" },
-      "author": "mlssoccer",
-      "title": "Jordi Alba! Barça legend scores first Inter Miami goal | MLSSoccer.com - MLSsoccer.com",
-      "description": "Four games in, Jordi Alba has scored his first Inter Miami CF goal.",
-      "url": "https://www.mlssoccer.com/news/jordi-alba-barca-legend-scores-first-inter-miami-goal",
-      "urlToImage": "https://images.mlssoccer.com/image/private/t_q-best/prd-league/xfke6hzq7bqutsnxfxmr.png",
-      "publishedAt": "2023-08-16T00:29:30Z",
-      "content": null
+      "uuid": "eb7efb65-ecee-44ed-9131-19165092559d",
+      "title": "Tsai Ing-Wen: Taiwan leader Tsai Ing-wen hails fallen soldiers on China battle anniversary",
+      "description": "Rest of World News: President Tsai Ing-wen visited Kinmen island in Taiwan to honor fallen soldiers who defended the island against Chinese forces 65 years ago....",
+      "keywords": "Tsai Ing-wen, tsai, lai, China battle anniversary",
+      "snippet": "KINMEN, Taiwan: President Tsai Ing-wen gave thanks Wednesday to the fallen soldiers who fended off Chinese Communist forces 65 years ago in a frontline island b...",
+      "url": "https://timesofindia.indiatimes.com/world/rest-of-world/taiwan-leader-tsai-ing-wen-hails-fallen-soldiers-on-china-battle-anniversary/articleshow/102981447.cms",
+      "image_url": "https://static.toiimg.com/thumb/msid-102981407,width-1070,height-580,imgsize-112698,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "language": "en",
+      "published_at": "2023-08-23T10:03:11.000000Z",
+      "source": "timesofindia.indiatimes.com",
+      "categories": [
+          "general"
+      ],
+      "relevance_score": null,
+      "locale": "in"
+    },
+    {
+      "uuid": "44d1f1b5-8fb1-4007-90a4-d860fed5e3e0",
+      "title": "Eight killed, 15 injured in bus accident in Nepal",
+      "description": "South Asia News: KATHMANDU: A passenger bus skidded off the main highway and plunged into a swollen river in Nepal's Bagmati province on Wednesday, killing at l...",
+      "keywords": "river accident Nepal, Nepal, District Police Office, bus accident, Accident",
+      "snippet": "KATHMANDU: A passenger bus skidded off the main highway and plunged into a swollen river in Nepal 's Bagmati province on Wednesday, killing at least eight peopl...",
+      "url": "https://timesofindia.indiatimes.com/world/south-asia/eight-killed-15-injured-in-bus-accident-in-nepal/articleshow/102981347.cms",
+      "image_url": "https://static.toiimg.com/thumb/msid-102981300,width-1070,height-580,imgsize-18204,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "language": "en",
+      "published_at": "2023-08-23T09:59:50.000000Z",
+      "source": "timesofindia.indiatimes.com",
+      "categories": [
+          "general"
+      ],
+      "relevance_score": null,
+      "locale": "in"
     }
   ]
 }
-
-
-[
-    {
-    "uuid": "2b642826-2d6e-4c67-8257-3584d14973ce",
-    "title": "Video of Rajinikanth meeting with U.P. Chief Minister goes viral",
-    "description": "Actor Rajinikanth caused a furore amongst Tamil movie fans after a video of him meeting the Uttar Pradesh Chief Minister Yogi Adithyanath went viral.",
-    "keywords": "Rajinikanth, Rajinikanth UP, Rajinikanth Uttar Pradesh, Rajinikanth Yogi Adityanath",
-    "snippet": "August 20, 2023 10:53 am | Updated 11:02 am IST\n\nActor Rajinikanth caused a furore amongst Tamil movie fans on August 19 after a video of him bowing down to the...",
-    "url": "https://www.thehindu.com/news/national/tamil-nadu/video-of-rajinikanth-meeting-with-up-chief-minister-goes-viral/article67215611.ece",
-    "image_url": "https://th-i.thgim.com/public/incoming/i39d98/article67215642.ece/alternates/LANDSCAPE_1200/PTI08_19_2023_000172A.jpg",
-    "language": "en",
-    "published_at": "2023-08-20T05:23:05.000000Z",
-    "source": "thehindu.com",
-    "categories": [
-    "general"
-    ],
-    "relevance_score": null,
-    "locale": "in"
-    },
-    {
-        "apiKeys": ["","","","","","","","","",""]
-    }
-]

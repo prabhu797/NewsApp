@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Spinner from './Spinner'
 
-export default class About extends Component {
-  render() {
+const About = () => {
+
     return (
       <div className='container my-3 text-center'>
         <Spinner/>
@@ -10,5 +10,6 @@ export default class About extends Component {
         <img src="https://w7.pngwing.com/pngs/169/68/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="" />
       </div>
     )
-  }
 }
+
+export default About
