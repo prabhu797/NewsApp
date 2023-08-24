@@ -52,7 +52,7 @@ const News = (props) => {
     useEffect(() => {
         fetchNews(page, num);
         let cat = capitalizeFirstLetter(props.category);
-        document.title = `News 24*7 - ${cat === 'General'? 'Home' : cat}`;// eslint-disable-next-line
+        document.title = `News 24*7 - ${cat === 'General'? '' : cat}`;// eslint-disable-next-line
     }, [num])
     
     

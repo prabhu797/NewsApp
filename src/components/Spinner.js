@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import LoadingLight from '../Loading-Light.gif'
-import LoadingDark from '../Loading-Dark.gif'
+import LoadingLight from '../images and logos/Loading-Light.gif'
+import LoadingDark from '../images and logos/Loading-Dark.gif'
 
 const Spinner = (props) => {
 
