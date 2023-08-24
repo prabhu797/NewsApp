@@ -6,10 +6,14 @@ import News from './components/News';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Link,
 } from 'react-router-dom';
 import About from './components/About';
 import LoadingBar from 'react-top-loading-bar';
+import LinkedInLogo from './images and logos/linkedin-logo.png'
+import GitHubLogo from './images and logos/github-mark.png'
+import GitHubLogoDark from './images and logos/github-mark-white.png'
 
 const App = () => {
 
@@ -27,8 +31,9 @@ const App = () => {
   }
 
     return (
-      <div>
-        <Router>
+      <>
+      <Router>
+        <div>
           <Navbar mode={mode} toggleMode={toggleMode}/>
           <LoadingBar
               color='#f11946'
@@ -45,9 +50,17 @@ const App = () => {
             <Route exact path='technology' element={<News setProgress={setProgress} mode={mode} key='technology' category='tech'/>}/>
             <Route exact path='about' element={<About/>}/>
           </Routes>
-        </Router>
-      </div>
+        </div>
+    
+        <div className="card-footer text-center" style={{backgroundColor: mode? '#0012ff24':'#c5eedc'}} >
+          <small style={{color: mode? 'rgb(210 207 225)':'#595959'}}>Created by Prabhudev Desai&ensp;
+          <Link target='_blank' to='https://www.linkedin.com/in/prabhudev797'><img src={LinkedInLogo} alt='linkedin' style={{height: '30px'}}></img></Link>
+          &ensp;
+          <Link target='_blank' to='https://www.github.com/prabhu797'><img src={mode? GitHubLogoDark: GitHubLogo} alt='linkedin' style={{height: '20px'}}></img></Link>
+          </small>
+        </div>
+      </Router>
+    </>
     )
 }
-
 export default App

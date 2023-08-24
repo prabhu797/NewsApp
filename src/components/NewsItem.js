@@ -1,5 +1,5 @@
 import React from 'react'
-import noImageAvailable from './noImageAvailable.jpg'
+import noImageAvailable from '../images and logos/noImageAvailable.jpg'
 
 const NewsItem = (props) => {
 
