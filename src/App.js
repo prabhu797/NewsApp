@@ -52,14 +52,13 @@ const App = () => {
           </Routes>
         </div>
     
-        <footer className="card-footer text-center" style={{backgroundColor: mode? '#0012ff24':'#c5eedc'}} >
+        <div className="card-footer text-center" style={{backgroundColor: mode? '#0012ff24':'#c5eedc'}} >
           <small style={{color: mode? 'rgb(210 207 225)':'#595959'}}>Created by Prabhudev Desai&ensp;
           <Link target='_blank' to='https://www.linkedin.com/in/prabhudev797'><img src={LinkedInLogo} alt='linkedin' style={{height: '30px'}}></img></Link>
           &ensp;
           <Link target='_blank' to='https://www.github.com/prabhu797'><img src={mode? GitHubLogoDark: GitHubLogo} alt='linkedin' style={{height: '20px'}}></img></Link>
           </small>
-        </footer>
-        
+        </div>
       </Router>
     </>
     )
